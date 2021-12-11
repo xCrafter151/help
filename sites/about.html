@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Website - xCrafter15</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    
+    <div class="hero">
+
+        <nav>
+
+            <img src="../images/logo.png" width="124" height="54" alt="logo" class="logo">
+            <ul>
+
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">PORTFOLIO</a></li>
+
+            </ul>
+
+            <img src="../images/moon.png" id="icon">
+
+        </nav>
+
+        <div class="info-about">
+
+            <p id="text">Hello and welcome to my Website. I am a 16 Year old Minecaft YouTuber <br>that learned in school how to code Websites and quite enjoy it. <br>I was born in Vienna and I live there but my whole famaily is from Bosnia. <br>In my freetime, I like to play Minecraft or Valorant. Sometime, I got on YouTube <br>and learn new WebDev things.</p>
+
+        </div>
+
+        <div class="img-box">
+
+            <img src="../images/pattern.png" class="back-img">
+            <img src="../images/skin.png" class="main-img">
+
+        </div>
+
+        <div class="social-links">
+
+            <a href=""><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/channel/UCrK4Dr_mj7em0Yk1pvJqokA"><i class="fab fa-youtube"></i></a>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function() {
+            document.body.classList.toggle("dark-theme");
+
+            if(document.body.classList.contains("dark-theme")) {
+                icon.src = "../images/sun.png";
+            } else {
+                icon.src = "../images/moon.png";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
